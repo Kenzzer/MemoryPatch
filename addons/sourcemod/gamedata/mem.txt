@@ -1,0 +1,40 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"CTFPlayer::PickupWeaponFromOther"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer21PickupWeaponFromOtherEP16CTFDroppedWeapon"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x56\x8B\x75\x08\x57\x8B\xF9\x81\xC6\x2A\x2A\x2A\x2A\x75\x2A\x5F\x32\xC0\x5E"
+			}
+		}
+		"Addresses"
+		{
+			"Patch_PickupWeaponFromOther"
+			{
+				"linux"
+				{
+					"signature"	"CTFPlayer::PickupWeaponFromOther"
+					"offset" "405" // 0x195
+				}
+				"windows"
+				{
+					"signature"	"CTFPlayer::PickupWeaponFromOther"
+					"offset" "282" // 0x11A
+				}
+			}
+		}
+		"Keys"
+		{
+			"Patch_PickupWeaponFromOther"
+			{
+				"windows"	"\xEB"
+				"linux"		"\x90\x90\x90\x90\x90\x90\x90\x90"
+			}
+
+		}
+	}
+}

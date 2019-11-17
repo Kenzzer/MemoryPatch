@@ -1,0 +1,4 @@
+*.bat
+*.smx
+*.exe
+/build/
